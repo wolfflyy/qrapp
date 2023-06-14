@@ -1,17 +1,14 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <qrapp/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import QrStream from './components/QrStream.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    qrapp:QrStream
   }
 }
 </script>
@@ -24,5 +21,17 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.mb {
+  margin-bottom: 10px;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.result {
+  width: 100%;
+  text-align: left;
 }
 </style>
